@@ -1,3 +1,3 @@
-require("keys/alias")
+local map = vim.api.nvim_set_keymap
 
-nm("<C-a>", ":ToggleTerm<CR>")
+map("n", "<C-a>", ":ToggleTerm<CR>", { noremap = true })

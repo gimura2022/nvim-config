@@ -1,7 +1,7 @@
-require("keys/alias")
+local map = vim.api.nvim_set_keymap
 
-vim.cmd [[ inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>" ]]
+map("i", "<Tab>", [[ coc#pum#visible() ? coc#pum#confirm() : "\<Tab>" ]], { noremap = true, expr = true }) 
 
-im("<silent> gd", "<Plug>(coc-definition)")
-im("<silent> gi", "<Plug>(coc-implementation)")
-im("<silent> gr", "<Plug>(coc-references)")
+map("i", "gd", "<Plug>(coc-definition)", { noremap = true, silent = true })
+map("i", "gi", "<Plug>(coc-implementation)", { noremap = true, silent = true })
+map("i", "gr", "<Plug>(coc-references)", { noremap = true, silent = true })
