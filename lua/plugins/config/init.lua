@@ -1,3 +1,5 @@
 require("plugins.config.lualine")
 require("plugins.config.toggleterm")
 require("plugins.config.battery")
+require("plugins.config.gdb")
+-- require("plugins.config.dashboard")

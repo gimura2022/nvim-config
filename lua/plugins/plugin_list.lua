@@ -9,6 +9,7 @@ local plugins = {
 	'akinsho/toggleterm.nvim',
 	'tpope/vim-commentary',
 	'terryma/vim-multiple-cursors',
+	'AlphabetsAlphabets/gdb.nvim',
 
 	{
 		'nvim-lualine/lualine.nvim',
@@ -20,7 +21,7 @@ local plugins = {
 			{'nvim-tree/nvim-web-devicons'},
 			{'nvim-lua/plenary.nvim'}
 		}
-	}
+	},
 }
 
 return plugins

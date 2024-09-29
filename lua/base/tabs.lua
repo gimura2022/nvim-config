@@ -1,6 +1,3 @@
-local opt = vim.opt
-local g   = vim.g
-
-opt.shiftwidth = 4
-opt.tabstop = 4
-opt.smartindent = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.smartindent = true

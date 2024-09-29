@@ -1,13 +1,11 @@
-local opt = vim.opt
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
-opt.splitright = true
-opt.splitbelow = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.encoding = "utf-8"
 
-opt.clipboard = "unnamedplus"
-opt.encoding = "utf-8"
-
-opt.fixeol = false
-opt.completeopt = 'menuone,noselect'
+vim.opt.fixeol = false
+vim.opt.completeopt = 'menuone,noselect'
 
 vim.wo.relativenumber = true
 vim.wo.number = true

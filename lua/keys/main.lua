@@ -4,7 +4,6 @@ function all_map(key, command, args)
 	map("n", key, command, args)	
 	map("i", key, command, args)	
 	map("v", key, command, args)	
-	map("c", key, command, args)	
 end
 
 all_map("<Left>", "<nop>", { noremap = true })
