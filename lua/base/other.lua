@@ -7,8 +7,8 @@ vim.opt.encoding = "utf-8"
 vim.opt.fixeol = false
 vim.opt.completeopt = 'menuone,noselect'
 
-vim.wo.relativenumber = true
-vim.wo.number = true
+vim.opt.number = true 
+vim.opt.relativenumber = true
 
 vim.o.scrolloff = 15
 vim.o.ttyfast = true
