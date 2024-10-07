@@ -1,5 +1,6 @@
 require("keys.coc")
 require("keys.main")
-require("keys.nerdtree")
 require("keys.toggleterm")
-require("keys.packer")
+require("keys.nvim_tree")
+require("keys.tabular")
+require("keys.telescope")

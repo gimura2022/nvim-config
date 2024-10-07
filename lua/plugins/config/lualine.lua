@@ -10,11 +10,6 @@ require("lualine").setup {
 	},
 	sections = {
 		lualine_c = { 'filename', 'lsp_progress' },
-		lualine_y = {
-			function ()
-				return require("battery").get_status_line()
-			end
-		},
 		lualine_z = { 'location', 'progress' }
 	},
 }
