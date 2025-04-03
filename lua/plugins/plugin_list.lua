@@ -12,6 +12,11 @@ local plugins = {
 	'nvim-tree/nvim-tree.lua',
 	'nvim-tree/nvim-web-devicons',
 
+	'leafgarland/typescript-vim',
+	'peitalin/vim-jsx-typescript',
+
+	'sputnick1124/uiua.vim',
+
 	{
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }

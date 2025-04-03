@@ -1,3 +1,17 @@
 {
-	"semanticTokens.enable": true
+	"semanticTokens.enable": true,
+	"languageserver": {
+		"asm-lsp": {
+			"command": "asm-lsp",
+			"filetypes": [
+				"asm", "s", "S"
+			]
+		},
+		"csharp-ls": {
+          		"command": "csharp-ls",
+          		"filetypes": ["cs"],
+          		"rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+        	}
+	},
+	"clangd.fallbackFlags": [ "-stdlib=libc++" ]
 }

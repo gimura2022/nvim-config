@@ -74,42 +74,34 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["battery.nvim"] = {
+  base46 = {
     loaded = true,
-    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/battery.nvim",
-    url = "https://github.com/justinhj/battery.nvim"
+    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/base46",
+    url = "https://github.com/nvchad/base46"
   },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/gimura/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  ["dashboard-nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/gimura/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
-    url = "https://github.com/nvimdev/dashboard-nvim"
-  },
-  ["gdb.nvim"] = {
+  fzf = {
     loaded = true,
-    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/gdb.nvim",
-    url = "https://github.com/AlphabetsAlphabets/gdb.nvim"
+    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/gimura/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  nerdtree = {
+  ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
+    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/gimura/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    loaded = true,
+    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -121,6 +113,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gimura/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  tabular = {
+    loaded = true,
+    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,
@@ -142,11 +144,6 @@ _G.packer_plugins = {
     path = "/home/gimura/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
-  ["vim-multiple-cursors"] = {
-    loaded = true,
-    path = "/home/gimura/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
-    url = "https://github.com/terryma/vim-multiple-cursors"
-  },
   ["vim-wakatime"] = {
     loaded = true,
     path = "/home/gimura/.local/share/nvim/site/pack/packer/start/vim-wakatime",
@@ -155,13 +152,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
